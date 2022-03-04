@@ -1,3 +1,13 @@
+// HAMBURGER
+
+$(".hamburger").click(function(){
+    $(this).toggleClass("icon");
+    $(this).toggleClass("ham-position");
+    $(".nav-ul").toggleClass("change-ul");
+});
+
+//  CART HOVER
+
 $(".p-click-1").mouseenter(function(){
     $(".p-txt-hide-1").fadeOut(300);
     $(".cart-1").fadeIn(300);
@@ -261,11 +271,4 @@ $(".cart-19").click(function(){
 $(".p-click-19").mouseleave(function(){
     $(".p-txt-hide-19").fadeIn(300);
     $(".cart-19").fadeOut(300);
-});
-
-
-
-$(".hamburger").click(function(){
-    $(this).toggleClass("icon");
-    $(".nav-ul").toggleClass("change-ul");
 });

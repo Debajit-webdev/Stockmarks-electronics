@@ -31,6 +31,7 @@ header{
     background-image: url("../images/welcome-img.jpg");
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
 nav{
     padding: 2rem 0;
@@ -43,7 +44,7 @@ nav{
     width: 100%;
 }
 .nav-right{
-    width: 55%;
+    width: 35%;
 }
 .nav-right span{
     color: white;
@@ -51,11 +52,12 @@ nav{
     transition: color 0.2s linear;
 }
 .hamburger{
-    width: 36px;
+    width: 30px;
     height: 30px;
     cursor: pointer;
     padding-top: 1.5rem;
     display: none;
+    transition: 0.3s ease;
 }
 .hamburger .bar{
     height: 4px;
@@ -66,10 +68,10 @@ nav{
     transition: 0.3s ease;
 }
 .hamburger #bar1{
-    transform: translateY(-7px);
+    transform: translateY(-5px);
 }
 .hamburger #bar3{
-    transform: translateY(7px);
+    transform: translateY(5px);
 }
 .nav-ul{
     width: 70%;
@@ -97,6 +99,9 @@ nav{
 
 .header-body{
     padding-top: 4rem;
+}
+.header-up{
+    overflow: hidden;
 }
 .header-up-left{
     width: 50%;
@@ -191,6 +196,7 @@ nav{
 }
 .sound-row-1{
     height: 440px;
+    overflow: hidden;
 }
 .sr1-left{
     width: 50%;
@@ -239,7 +245,7 @@ nav{
 .stars span.active{
     color: #f6b61b;
 }
-.cart{
+.cart, .cart-b{
     display: none;
     font-size: 1rem;
     width: 60%;
@@ -260,8 +266,8 @@ nav{
     background-position: center;
     color: white;
 }
-.sr1-right h2, .sr1-right h4, .sr1-right h5,
-.sr2-left h2, .sr2-left h4, .sr2-left h5{
+.sr1-right h2, .sr1-right h4,
+.sr2-left h2, .sr2-left h4, .shop-now{
     padding-left: 2rem;
 }
 .sr1-right h2, .sr2-left h2{
@@ -273,12 +279,14 @@ nav{
     font-weight: 400;
     letter-spacing: 6px;
 }
-.sr1-right h5, .sr2-left h5{
-    width: 20%;
-    font-size: 1.3rem;
-    padding-top: 30%;
+.shop-now{
+    width: 25%;
+    font-size: 1.6rem;
+    padding-top: 33%;
     cursor: pointer;
     color: white;
+}
+.sr1-right h5, .sr2-left h5{
     transition: color 0.2s linear;
 }
 .sr1-right h5:hover, .sr2-left h5:hover{
@@ -287,6 +295,7 @@ nav{
 .sound-row-2{
     height: 540px;
     padding-top: 7rem;
+    overflow: hidden;
 }
 .sr2-left{
     width: 50%;
@@ -337,6 +346,7 @@ nav{
 }
 .bo-txt{
     padding-top: 1rem;
+    overflow: hidden;
 }
 .bo-txt h3{
     font-size: 2.2rem;
@@ -356,10 +366,18 @@ nav{
     font-weight: 300;
     color: white;
 }
-.bo-txt h5{
-    font-size: 1.3rem;
+.shop-now-2{
+    width: 23%;
+    font-size: 1.5rem;
     padding-top: 3rem;
     color: white;
+    cursor: pointer;
+}
+.shop-now-2 h5{
+    transition: color 0.2s linear;
+}
+.shop-now-2 h5:hover{
+    color: #da2621;
 }
 
 
@@ -385,6 +403,7 @@ nav{
 .apple-camera{
     width: 100%;
     padding-top: 5rem;
+    overflow: hidden;
 }
 .apple, .camera{
     width: 49.5%;
@@ -413,10 +432,18 @@ nav{
     font-weight: 400;
     letter-spacing: 6px;
 }
-.apple h5, .camera h5{
-    font-size: 1.3rem;
+.shop-now-3{
+    width: 24%;
+    font-size: 1.5rem;
     padding-top: 30%;
     padding-bottom: 5%;
+    cursor: pointer;
+}
+.shop-now-3 h5{
+    transition: color 0.2s linear;
+}
+.shop-now-3 h5:hover{
+    color: #da2621;
 }
 
 
@@ -475,6 +502,12 @@ nav{
 .blog-left{
     width: 50%;
     border-right: 1px solid white;
+    color: white;
+    padding-left: 1.5rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 .blog-big-txt-1{
     font-size: 1.5rem;
@@ -509,7 +542,7 @@ nav{
     width: 100%;
     height: 50%;
 }
-.brr-box, .blog-left{
+.brr-box{
     width: 50%;
     color: white;
     border: 1px solid white;
@@ -581,7 +614,7 @@ form button:hover{
 }
 
 
-/****** Subscribe Starts ******/
+/****** Footer Starts ******/
 
 footer{
     padding: 4rem 0 3rem;
@@ -641,6 +674,7 @@ footer{
     .inner{
         max-width: 1150px;
     }
+
     .header-up{
         padding-top: 2rem;
     }
@@ -648,14 +682,27 @@ footer{
         font-size: 9rem;
         padding-top: 3rem;
     }
+
+    .blog-small-txt-1 {
+        width: 37%;
+    }
+    .blog-small-txt {
+        width: 77%;
+    }
+
+    .cart{
+        top: 70%;
+    }
 }
 @media(max-width:1175px){
     .inner{
         max-width: 1050px;
     }
+
     .nav-right {
-        width: 63%;
+        width: 35%;
     }
+
     .header-up{
         padding-top: 4rem;
     }
@@ -663,14 +710,57 @@ footer{
         font-size: 8rem;
         padding-top: 5rem;
     }
+
+    .sound-row-1 {
+        height: 400px;
+    }
+    .sound-row-2 {
+        height: 500px;
+    }
+    .shop-now{
+        width: 30%;
+    }
+
+    .cart-b {
+        width: 66%;
+        left: 18%;
+    }
+
+    .big-offer {
+        height: 320px;
+    }
+    .bo-txt {
+        width: 50%;
+        padding-top: 0rem;
+    }
+    .bo-img {
+        width: 50%;
+    }
+    .bo-img img{
+        width: 100%;
+        padding-top: 1rem;
+    }
+
+    .apple h2, .camera h2 {
+        font-size: 4rem;
+    }
+    .apple h4, .camera h4 {
+        font-size: 1.7rem;
+        letter-spacing: 3px;
+    }
+
+    .blog-small-txt-1 {
+        width: 41%;
+    }
+    .blog-small-txt {
+        width: 85%;
+    }
 }
 @media(max-width:1070px){
     .inner{
         max-width: 950px;
     }
-    .nav-right {
-        width: 70%;
-    }
+
     .header-up {
         padding-top: 6rem;
     }
@@ -681,11 +771,54 @@ footer{
         font-size: 7rem;
         padding-top: 6rem;
     }
+
+    .product-txt h4 {
+        font-size: 1rem;
+    }
+    .cart {
+        width: 65%;
+        top: 63%;
+        left: 17%;
+    }
+    .cart-b {
+        width: 73%;
+        left: 15%;
+    }
+
+    .big-offer {
+        height: 300px;
+    }
+    .bo-txt h3 {
+        font-size: 2rem;
+    }
+    .bo-txt h2 {
+        font-size: 4.5rem;
+    }
+    .bo-txt h4 {
+        font-size: 1.4rem;
+    }
+
+    .blog-small-txt-1 {
+        width: 45%;
+    }
+    .blog-small-txt {
+        width: 95%;
+    }
+
+    .shop-now-3 {
+        width: 28%;
+    }
+
+    .subscribe-txt p {
+        font-size: 1.2rem;
+        padding-top: 0.3rem;
+    }
 }
 @media(max-width:960px){
     .inner{
         max-width: 900px;
     }
+
     .nav-right {
         width: 22%;
         position: relative;
@@ -695,11 +828,13 @@ footer{
         display: block;
         /* margin-right: 2rem; */
         position: absolute;
-        right: 300%;
-        top: -73%;
+        /* right: 260%; */
+        right: 0%;
+        top: -82%;
     }
     .nav-ul{
-        width: 500px;
+        /* display: none; */
+        width: 650px;
         height: 100vh;
         text-align: center;
         flex-direction: column;
@@ -708,8 +843,8 @@ footer{
         /* box-shadow: -27px 83px 86px 10px; */
         position: absolute;
         top: -130%;
-        left: 115%;
-        background-color: rgb(19, 32, 45);
+        left: 140%;
+        background-color: #b52928;
         transition: 0.3s ease;
     }
     .nav-ul li{
@@ -718,18 +853,23 @@ footer{
     .nav-ul li a{
         font-size: 1.4rem;
     }
-    .toggle-bar .icon #bar1{
+    .icon #bar1{
         transform: translateY(8px) rotate(-45deg);
     }
-    .toggle-bar .icon #bar3{
+    .icon #bar3{
         transform: translateY(1px) rotate(45deg);
     }
-    .toggle-bar .icon #bar2{
+    .icon #bar2{
         opacity: 0;
     }
-    .toggle-bar .change-ul{
-        left: 0%;
-    }    
+    .change-ul{
+        /* display: block; */
+        left: -215%;
+    } 
+    .ham-position{
+        right: 325%;
+    }  
+
     .header-txt h2 {
         font-size: 4rem;
         line-height: 75px;
@@ -742,4 +882,729 @@ footer{
         font-size: 6rem;
         padding-top: 7rem;
     }
+
+    .sound-row-1 {
+        height: 370px;
+    }
+    .sound-row-2 {
+        height: 460px;
+    }
+    .sr1-left, .sr2-right {
+        justify-content: center;
+    }
+    .sr1-right h2, .sr2-left h2 {
+        font-size: 4rem;
+    }
+    .sr1-right h4, .sr2-left h4 {
+        font-size: 1.6rem;
+        letter-spacing: 5px;
+    }
+    .cart {
+        width: 70%;
+        left: 14%;
+    }
+
+    .apple h2, .camera h2 {
+        font-size: 3rem;
+    }
+    .apple h4, .camera h4 {
+        font-size: 1.4rem;
+    }
+
+    .blog-body {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .blog-left {
+        width: 100%;
+        height: 400px;
+    }
+    .blog-right {
+        width: 100%;
+        height: 500px;
+    }
+    .blog-small-txt-1 {
+        width: 24%;
+    }
+    .blog-small-txt {
+        width: 48%;
+    }
+
+    .subscribe-txt p {
+        font-size: 1.1rem;
+    }
 }
+@media(max-width:915px){
+    .inner{
+        max-width: 820px;
+    }
+
+    /* .nav-ul {
+        left: 130%;
+    } */
+    .hamburger {
+        width: 30px;
+        top: -82%;
+    }
+    .hamburger #bar1 {
+        transform: translateY(-5px);
+    }
+    .hamburger #bar3 {
+        transform: translateY(5px);
+    }
+    .icon #bar1{
+        transform: translateY(8px) rotate(-45deg);
+    }
+    .icon #bar3{
+        transform: translateY(1px) rotate(45deg);
+    }
+    .nav-ul {
+        width: 620px;
+        top: -140%;
+    }
+
+    .header-up {
+        padding-top: 8rem;
+    }
+    .header-txt h2 {
+        font-size: 4rem;
+    }
+    .header-txt h4 {
+        font-size: 2rem;
+    }
+    .header-down h1 {
+        /* font-size: 7rem; */
+        padding-top: 8rem;
+    }
+
+    .support{
+        justify-content: space-around;
+    }
+    .groups {
+        width: 40%;
+    }
+    .grp-pdng{
+        padding-top: 3rem;
+    }
+
+    .shop-now{
+        width: 35%;
+    }
+
+    .cart-b {
+        width: 84%;
+        top: 72%;
+        left: 10%;
+    }
+
+    .big-offer {
+        height: 270px;
+    }
+    .bo-txt h3 {
+        font-size: 1.8rem;
+    }
+    .bo-txt h2 {
+        font-size: 4rem;
+    }
+    .bo-txt h4 {
+        font-size: 1.2rem;
+    }
+    .shop-now-2 {
+        width: 27%;
+    }
+    .blog-small-txt-1 {
+        width: 26%;
+    }
+    .blog-small-txt {
+        width: 53%;
+    }
+
+    .shop-now-3 {
+        width: 31%;
+    }
+
+    .subscribe-txt h3 {
+        font-size: 1.8rem;
+    }
+    .subscribe-txt p {
+        font-size: 1rem;
+    }
+
+    .footer-col img{
+        width: 100%;
+    }
+}
+@media(max-width:830px){
+    .inner{
+        max-width: 720px;
+    }
+    .nav-ul {
+        width: 560px;
+        top: -150%;
+    }
+
+    .header-up {
+        padding-top: 8rem;
+    }
+    .header-txt h2 {
+        font-size: 3rem;
+        line-height: 55px;
+    }
+    .header-txt h4 {
+        font-size: 1.8rem;
+        padding: 1rem 0 1rem;
+        line-height: 2.7rem;
+    }
+    .header-txt button {
+        width: 50%;
+    }
+    .header-down h1 {
+        font-size: 5rem;
+        padding-top: 10rem;
+    }
+
+    .sound-row-1 {
+        height: 350px;
+    }
+    .sound-row-2 {
+        height: 425px;
+    }
+    .shop-now{
+        width: 38%;
+    }
+    .cart {
+        width: 78%;
+        left: 9%;
+    }
+    .cart-b {
+        width: 92%;
+        top: 70%;
+        left: 7%;
+    }
+
+    .big-offer {
+        height: 270px;
+    }
+    .bo-txt h3 {
+        font-size: 1.5rem;
+    }
+    .bo-txt h2 {
+        font-size: 3rem;
+    }
+    .bo-txt h4 {
+        font-size: 1rem;
+    }
+    .shop-now-2 {
+        width: 30%;
+    }
+    .shop-now-3 {
+        width: 34%;
+    }
+
+    .blog-small-txt-1 {
+        width: 30%;
+    }
+    .blog-small-txt {
+        width: 61%;
+    }
+
+    .subscribe-txt h3 {
+        font-size: 1.6rem;
+    }
+    .subscribe-txt p {
+        font-size: 0.9rem;
+    }
+}
+@media(max-width:750px){
+    .inner{
+        max-width: 650px;
+    }
+    .nav-ul {
+        width: 500px;
+        top: -150%;
+    }
+
+    .header-up {
+        padding-top: 0rem;
+        flex-direction: column;
+    }
+    .header-up-left {
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .vertical-txt {
+        /* width: 10%; */
+        display: none;
+    }
+    .header-txt {
+        width: 100%;
+        text-align: center;
+    }
+    .header-txt h2 {
+        font-size: 3rem;
+        line-height: 55px;
+    }
+    .header-txt h4 {
+        font-size: 2.2rem;
+        padding: 0.5rem 0 1.5rem;
+        line-height: 3rem;
+    }
+    .header-txt button {
+        width: 30%;
+        margin: 0 auto;
+    }
+    .header-up-right {
+        width: 100%;
+        /* display: flex; */
+        padding-top: 3rem;
+    }
+    .header-up-right img {
+        width: 55%;
+        margin: 0 auto;
+    }
+    .header-down h1 {
+        font-size: 4rem;
+        padding-top: 1rem;
+    }
+
+    .sound-row-1 {
+        height: auto;
+        flex-direction: column-reverse;
+    }
+    .sr1-right {
+        width: 100%;
+    }
+    .sr1-left, .sr2-right {
+        justify-content: center;
+        width: 100%;
+    }
+    .sound-row-2 {
+        height: auto;
+        flex-direction: column;
+    }
+    .sr2-left {
+        width: 100%;
+    }
+    .shop-now {
+        width: 24%;
+        padding-bottom: 2rem;
+    }
+    .product-txt h4 {
+        font-size: 1.3rem;
+    }
+    .product-2 {
+        width: 45%;
+    }
+    .cart {
+        width: 60%;
+        top: 80%;
+        left: 21%;
+    }
+    .cart-b {
+        width: 60%;
+        top: 86%;
+        left: 21%;
+    }
+
+    .bo-txt {
+        width: 100%;
+        text-align: center;
+    }
+    .bo-txt h3 {
+        font-size: 2rem;
+    }
+    .bo-txt h2 {
+        font-size: 5rem;
+    }
+    .bo-txt h4 {
+        font-size: 1.5rem;
+    }
+    .bo-img {
+        display: none;
+    }
+    .shop-now-2 {
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    .apple-camera {
+        flex-direction: column;
+    }
+    .apple, .camera {
+        width: 100%;
+    }
+    .camera {
+        margin-top: 1rem;
+        background-position: top;
+    }
+
+    .blog-small-txt-1 {
+        width: 33%;
+    }
+    .blog-small-txt {
+        width: 68%;
+    }
+
+    .latest-product h3, .best-selling-product h3, 
+    .most-viewed-product h3{
+        font-size: 2.2rem;
+    }
+
+    .c-name {
+        width: 26%;
+    }
+    .c-pdng{
+        padding-top: 2rem;
+    }
+
+    .subscribe .flex{
+        flex-direction: column;
+    }
+    .subscribe form{
+        flex-direction: row !important;
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+    .subscribe-txt {
+        width: 90%;
+    }
+    .subscribe-txt h3 {
+        font-size: 2.3rem;
+    }
+    .subscribe-txt p {
+        font-size: 1.3rem;
+    }
+    form input {
+        width: 75%;
+        height: auto;
+    }
+    form button {
+        width: 25%;
+        height: auto;
+    }
+
+    .my-footer {
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    .footer-col {
+        width: 35%;
+    }
+}
+@media(max-width:665px){
+    html{
+        font-size: 14px;
+    }
+    .inner{
+        max-width: 570px;
+    }
+    .nav-left {
+        width: 25%;
+    }
+    .nav-ul {
+        width: 406px;
+    }
+    .change-ul {
+        left: -185%;
+    }
+    .ham-position {
+        right: 295%;
+    }
+    .sr1-right h5, .sr2-left h5 {
+        padding-bottom: 2rem;
+    }
+    .big-offer {
+        height: 265px;
+    }
+    .blog-small-txt-1 {
+        width: 35%;
+    }
+    .blog-small-txt {
+        width: 72%;
+    }
+}
+@media(max-width:585px){
+    /* html{
+        font-size: 14px;
+    } */
+    .inner{
+        max-width: 500px;
+    }
+    .nav-left {
+        width: 30%;
+    }
+    .nav-right {
+        width: 30%;
+        padding-right: 15%;
+    }
+    .nav-ul {
+        width: 260px;
+    }
+    .change-ul {
+        left: -48%;
+    }
+    .ham-position {
+        right: 160%;
+    }
+
+    .header-txt h2 {
+        font-size: 2.6rem;
+    }
+    .header-txt h4 {
+        font-size: 2.1rem;
+    }
+    .header-down h1 {
+        font-size: 4rem;
+        letter-spacing: 1rem;
+        padding-top: 4rem;
+    }
+
+    .shop-now {
+        width: 28%;
+    }
+
+    .blog-left {
+        height: 250px;
+    }
+    .blog-right {
+        height: auto;
+    }
+    .br-row {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .brr-box {
+        width: 100%;
+        height: 250px;
+    }
+    .blog-small-txt-1, .blog-small-txt {
+        width: 40%;
+    }
+    .blog-big-txt-2{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width:515px){
+    .inner{
+        max-width: 450px;
+    }
+    .nav-ul {
+        width: 230px;
+    }
+    .header-down h1 {
+        font-size: 3.5rem;
+    }
+    .blog-small-txt-1, .blog-small-txt {
+        width: 45%;
+    }
+}
+@media(max-width:460px){
+    .inner{
+        max-width: 400px;
+    }
+    .nav-right {
+        padding-right: 14%;
+    }
+    .hamburger {
+        width: 26px;
+    }
+    .hamburger .bar {
+        height: 3px;
+    }
+    .icon #bar3 {
+        transform: translateY(3px) rotate(45deg);
+    }
+
+    .header-txt button {
+        width: 37%;
+    }
+    .header-down h1 {
+        font-size: 3rem;
+    }
+
+    .cart {
+        width: 60%;
+        top: 100%;
+        left: 21%;
+    }
+    .cart-b {
+        top: 97%;
+    }
+    .mrgn-top{
+        margin-top: 4rem;
+    }
+    .mrgn-top-2{
+        margin-top: 4rem !important;
+    }
+
+    .shop-now {
+        width: 30%;
+    }
+
+    .support {
+        padding-top: 3rem;
+    }
+    .groups {
+        width: 60%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .grp-pdng-2{
+        padding-top: 3rem;
+    }
+    .groups-img {
+        width: 17%;
+        margin: 0 auto;
+    }
+    .groups-txt {
+        width: 100%;
+    }
+    .groups-txt h3 {
+        font-size: 1.6rem;
+    }
+    .groups-txt h4 {
+        font-size: 1.4rem;
+    }
+
+    .sr1-right h2, .sr2-left h2 {
+        font-size: 3.5rem;
+    }
+
+    .product-1 {
+        width: 70%;
+    }
+    .product-2 {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .bo-txt h2 {
+        font-size: 4rem;
+    }
+    .blog-small-txt-1, .blog-small-txt {
+        width: 51%;
+    }
+
+    .c-name {
+        width: 40%;
+    }
+}
+
+@media(max-width:415px){
+    .inner{
+        max-width: 360px;
+    }
+    .nav-left {
+        width: 35%;
+    }
+    .nav-ul {
+        width: 190px;
+    }
+    .nav-ul li a {
+        font-size: 1.3rem;
+    }
+
+    .header-down h1 {
+        font-size: 2.5rem;
+    }
+
+    .shop-now {
+        width: 34%;
+    }
+
+    .apple h4, .camera h4 {
+        font-size: 1.1rem;
+    }
+
+    .blog-big-txt-1, .blog-big-txt-2 {
+        font-size: 1.4rem;
+    }
+    .blog-small-txt-1, .blog-small-txt {
+        width: 57%;
+    }
+}
+@media(max-width:365px){
+    .inner{
+        max-width: 300px;
+    }
+    .nav-left {
+        width: 40%;
+    }
+    .nav-right {
+        width: 36%;
+        padding-right: 17%;
+    }
+    .nav-ul {
+        width: 160px;
+    }
+    .change-ul {
+        left: -24%;
+    }
+    .nav-ul li a {
+        font-size: 1.2rem;
+    }
+    .ham-position {
+        right: 135%;
+    }
+    
+    .header-txt h4 {
+        font-size: 1.9rem;
+    }
+    .header-txt button {
+        width: 50%;
+    }
+
+    .shop-now {
+        width: 37%;
+    }
+
+    .big-offer {
+        height: 245px;
+    }
+    .bo-txt h2 {
+        font-size: 3.4rem;
+    }
+    .shop-now-2 {
+        width: 33%;
+    }
+
+    .blog-big-txt-1, .blog-big-txt-2 {
+        font-size: 1.2rem;
+    }
+    .blog-small-txt-1, .blog-small-txt {
+        width: 68%;
+    }
+
+    .shop-now-3 {
+        width: 36%;
+    }
+
+    .subscribe-txt h3 {
+        font-size: 2rem;
+    }
+    .subscribe-txt p {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        padding: 0rem 0 3rem;
+    }
+    .footer-col {
+        width: 100%;
+        margin: 3rem auto 0rem;
+    }
+}
+
+
+
+/* After completing responsive works to be done - - 
+    1) smaller hamburger size   [-DONE-]
+    2) Resize (width & height) & make clickable link & change color of "Shop Now -->"  [-DONE-]
+    3) resize .nav-ul width for all media  [-DONE-]
+    4) Admin & Date gap decrease after 960px media  [-DONE-]
+    5) Add To Cart size & position set for media  [-DONE-]
+    6) AOS Plugin  */
