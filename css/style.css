@@ -77,12 +77,10 @@ nav{
     width: 70%;
     display: flex;
     justify-content: flex-end; 
-    /* padding-top: 1.2rem; */
 }
 .nav-ul li{
     list-style: none;
     padding-left: 2.5rem;
-    /* padding-top: 0.4rem; */
 }
 .nav-ul li a{
     font-size: 1.2rem;
@@ -141,7 +139,6 @@ nav{
     transition: background-color 0.2s linear, color 0.2s linear;
 }
 .header-txt button:hover{
-    /* background-color: #292828; */
     background-color: black;
     color: white;
 }
@@ -826,21 +823,17 @@ footer{
     }
     .hamburger{
         display: block;
-        /* margin-right: 2rem; */
         position: absolute;
-        /* right: 260%; */
         right: 0%;
         top: -82%;
     }
     .nav-ul{
-        /* display: none; */
         width: 650px;
         height: 100vh;
         text-align: center;
         flex-direction: column;
         justify-content: center;
         padding-top: 0;
-        /* box-shadow: -27px 83px 86px 10px; */
         position: absolute;
         top: -130%;
         left: 140%;
@@ -864,7 +857,6 @@ footer{
         opacity: 0;
     }
     .change-ul{
-        /* display: block; */
         left: -215%;
     } 
     .ham-position{
@@ -940,10 +932,6 @@ footer{
     .inner{
         max-width: 820px;
     }
-
-    /* .nav-ul {
-        left: 130%;
-    } */
     .hamburger {
         width: 30px;
         top: -82%;
@@ -975,7 +963,6 @@ footer{
         font-size: 2rem;
     }
     .header-down h1 {
-        /* font-size: 7rem; */
         padding-top: 8rem;
     }
 
@@ -1136,7 +1123,6 @@ footer{
         flex-direction: column;
     }
     .vertical-txt {
-        /* width: 10%; */
         display: none;
     }
     .header-txt {
@@ -1158,7 +1144,6 @@ footer{
     }
     .header-up-right {
         width: 100%;
-        /* display: flex; */
         padding-top: 3rem;
     }
     .header-up-right img {
@@ -1328,9 +1313,6 @@ footer{
     }
 }
 @media(max-width:585px){
-    /* html{
-        font-size: 14px;
-    } */
     .inner{
         max-width: 500px;
     }
@@ -1395,6 +1377,9 @@ footer{
     }
     .nav-ul {
         width: 230px;
+    }
+    .header-body {
+        padding-top: 1rem;
     }
     .header-down h1 {
         font-size: 3.5rem;
@@ -1599,13 +1584,3 @@ footer{
         margin: 3rem auto 0rem;
     }
 }
-
-
-
-/* After completing responsive works to be done - - 
-    1) smaller hamburger size   [-DONE-]
-    2) Resize (width & height) & make clickable link & change color of "Shop Now -->"  [-DONE-]
-    3) resize .nav-ul width for all media  [-DONE-]
-    4) Admin & Date gap decrease after 960px media  [-DONE-]
-    5) Add To Cart size & position set for media  [-DONE-]
-    6) AOS Plugin  */
