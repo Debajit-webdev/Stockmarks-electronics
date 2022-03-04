@@ -488,9 +488,6 @@ nav{
 .latest-blog a{
     text-decoration: none;
 }
-.latest-blog a:hover .blog-big-txt-1{
-    color: #ac312c;
-}
 .blog-body{
     width: 100%;
     height: 600px;
@@ -508,6 +505,13 @@ nav{
 }
 .blog-big-txt-1{
     font-size: 1.5rem;
+}
+.blog-big-txt-1 h2{
+    color: white;
+    transition: color 0.2s linear;
+}
+.blog-big-txt-1 h2:hover{
+    color: #ac312c;
 }
 .blog-small-txt-1{
     width: 35%;
@@ -549,7 +553,11 @@ nav{
     flex-direction: column;
     justify-content: flex-end;
 }
-.brr-box:hover .blog-big-txt-2{
+.blog-big-txt-2 h2{
+    color: white;
+    transition: color 0.2s linear;
+}
+.blog-big-txt-2 h2:hover{
     color: #ac312c;
 }
 .blog-small-txt{
