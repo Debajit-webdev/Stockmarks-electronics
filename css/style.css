@@ -844,6 +844,7 @@ footer{
         position: absolute;
         top: -130%;
         left: 140%;
+        z-index: 10;
         background-color: #b52928;
         transition: 0.3s ease;
     }
