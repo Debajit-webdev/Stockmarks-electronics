@@ -242,8 +242,49 @@ nav{
 .stars span.active{
     color: #f6b61b;
 }
+.p-txt-hide-1, .p-txt-hide-2, .p-txt-hide-3, .p-txt-hide-4,
+.p-txt-hide-5, .p-txt-hide-6, .p-txt-hide-7, .p-txt-hide-8,
+.p-txt-hide-9, .p-txt-hide-10, .p-txt-hide-11, .p-txt-hide-12,
+.p-txt-hide-13, .p-txt-hide-14, .p-txt-hide-15, .p-txt-hide-16,
+.p-txt-hide-17, .p-txt-hide-18, .p-txt-hide-19{
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+.p-click-1:hover .p-txt-hide-1, .p-click-2:hover .p-txt-hide-2,
+.p-click-3:hover .p-txt-hide-3, .p-click-4:hover .p-txt-hide-4,
+.p-click-5:hover .p-txt-hide-5, .p-click-6:hover .p-txt-hide-6,
+.p-click-7:hover .p-txt-hide-7, .p-click-8:hover .p-txt-hide-8,
+.p-click-9:hover .p-txt-hide-9, .p-click-10:hover .p-txt-hide-10,
+.p-click-11:hover .p-txt-hide-11, .p-click-12:hover .p-txt-hide-12,
+.p-click-13:hover .p-txt-hide-13, .p-click-14:hover .p-txt-hide-14,
+.p-click-15:hover .p-txt-hide-15, .p-click-16:hover .p-txt-hide-16,
+.p-click-17:hover .p-txt-hide-17, .p-click-18:hover .p-txt-hide-18,
+.p-click-19:hover .p-txt-hide-19{
+    visibility: hidden;
+    opacity: 0;
+}
+.cart-1, .cart-2, .cart-3, .cart-4, .cart-5, .cart-6, .cart-7,
+.cart-8, .cart-9, .cart-10, .cart-11, .cart-12, .cart-13, .cart-14,
+.cart-15, .cart-16, .cart-17, .cart-18, .cart-19{
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+.p-click-1:hover .cart-1, .p-click-2:hover .cart-2,
+.p-click-3:hover .cart-3, .p-click-4:hover .cart-4,
+.p-click-5:hover .cart-5, .p-click-6:hover .cart-6,
+.p-click-7:hover .cart-7, .p-click-8:hover .cart-8,
+.p-click-9:hover .cart-9, .p-click-10:hover .cart-10,
+.p-click-11:hover .cart-11, .p-click-12:hover .cart-12,
+.p-click-13:hover .cart-13, .p-click-14:hover .cart-14,
+.p-click-15:hover .cart-15, .p-click-16:hover .cart-16,
+.p-click-17:hover .cart-17, .p-click-18:hover .cart-18,
+.p-click-19:hover .cart-19{
+    visibility: visible;
+    opacity: 1;
+}
 .cart, .cart-b{
-    display: none;
     font-size: 1rem;
     width: 60%;
     height: 50px;
@@ -256,9 +297,13 @@ nav{
     top: 80%;
     left: 20%;
 }
+.cart-b {
+    width: 90%;
+    left: 10%;
+}
 .sr1-right{
     width: 50%;
-    background-image: url("../images/banner-01.png");
+    background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../images/banner-01.png");
     background-size: cover;
     background-position: center;
     color: white;
@@ -296,7 +341,7 @@ nav{
 }
 .sr2-left{
     width: 50%;
-    background-image: url("../images/banner-02.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../images/banner-02.jpg");
     background-size: cover;
     background-position: center;
     color: white;
@@ -322,10 +367,11 @@ nav{
     width: 100%;
     padding-top: 2rem;
 }
-.product-2{
-    width: 18%;
-    cursor: pointer; 
+.product-2 {
+    width: 60%;
+    cursor: pointer;
     position: relative;
+    margin: 0 auto;
 }
 
 
@@ -467,7 +513,8 @@ nav{
     padding-top: 8rem;
 }
 .c-name{
-    width: 10%;
+    width: 65%;
+    margin: 0 auto;
 }
 .c-name img{
     width: 100%;
@@ -727,8 +774,8 @@ footer{
     }
 
     .cart-b {
-        width: 66%;
-        left: 18%;
+        width: 100%;
+        left: 6%;
     }
 
     .big-offer {
@@ -785,10 +832,6 @@ footer{
         top: 63%;
         left: 17%;
     }
-    .cart-b {
-        width: 73%;
-        left: 15%;
-    }
 
     .big-offer {
         height: 300px;
@@ -837,7 +880,7 @@ footer{
     }
     .nav-ul{
         width: 650px;
-        height: 100vh;
+        height: 867px;
         text-align: center;
         flex-direction: column;
         justify-content: center;
@@ -988,12 +1031,6 @@ footer{
         width: 35%;
     }
 
-    .cart-b {
-        width: 84%;
-        top: 72%;
-        left: 10%;
-    }
-
     .big-offer {
         height: 270px;
     }
@@ -1073,10 +1110,9 @@ footer{
         width: 78%;
         left: 9%;
     }
-    .cart-b {
-        width: 92%;
-        top: 70%;
-        left: 7%;
+
+    .product-2 {
+        width: 70%;
     }
 
     .big-offer {
@@ -1189,16 +1225,11 @@ footer{
         font-size: 1.3rem;
     }
     .product-2 {
-        width: 45%;
+        width: 75%;
     }
     .cart {
         width: 60%;
         top: 80%;
-        left: 21%;
-    }
-    .cart-b {
-        width: 60%;
-        top: 86%;
         left: 21%;
     }
 
@@ -1246,11 +1277,8 @@ footer{
         font-size: 2.2rem;
     }
 
-    .c-name {
-        width: 26%;
-    }
     .c-pdng{
-        padding-top: 2rem;
+        padding-top: 0rem;
     }
 
     .subscribe .flex{
@@ -1357,6 +1385,10 @@ footer{
         width: 28%;
     }
 
+    .product-2 {
+        width: 80%;
+    }
+
     .blog-left {
         height: 250px;
     }
@@ -1425,9 +1457,6 @@ footer{
         top: 100%;
         left: 21%;
     }
-    .cart-b {
-        top: 97%;
-    }
     .mrgn-top{
         margin-top: 4rem;
     }
@@ -1481,10 +1510,6 @@ footer{
     }
     .blog-small-txt-1, .blog-small-txt {
         width: 51%;
-    }
-
-    .c-name {
-        width: 40%;
     }
 }
 
